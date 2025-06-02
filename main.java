@@ -1,7 +1,10 @@
-import ui.StudentManagementUI;
+import ui.LoginUI;
 
 public class main {
     public static void main(String[] args) {
-        new StudentManagementUI();
+        // Launch the Login UI
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            new LoginUI();
+        });
     }
 }
